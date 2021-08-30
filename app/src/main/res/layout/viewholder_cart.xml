@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/card_popular"
+    android:elevation="3dp">
+
+    <ImageView
+        android:id="@+id/imageview_food_image_cart_viewholder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizza2" />
+
+    <TextView
+        android:id="@+id/textview_food_title_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textColor="#373b54"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageview_food_image_cart_viewholder"
+        app:layout_constraintTop_toTopOf="@+id/imageview_food_image_cart_viewholder" />
+
+    <TextView
+        android:id="@+id/textview_price_one_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="0.0"
+        android:textColor="#373b54"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_food_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_price_all_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="0.0"
+        android:textStyle="bold"
+        android:textColor="#373b54"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageview_plus_button_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageview_plus_button_cart" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="$"
+        android:textColor="#ff3d00"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_price_one_cart"
+        app:layout_constraintEnd_toStartOf="@+id/textview_price_one_cart"
+        app:layout_constraintTop_toTopOf="@+id/textview_price_one_cart" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="$"
+        android:textColor="#ff3d00"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_price_all_cart"
+        app:layout_constraintEnd_toStartOf="@+id/textview_price_all_cart"
+        app:layout_constraintTop_toTopOf="@+id/textview_price_all_cart" />
+
+    <ImageView
+        android:id="@+id/imageview_minus_button_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageview_food_image_cart_viewholder"
+        app:srcCompat="@drawable/minus" />
+
+    <TextView
+        android:id="@+id/textView_count_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageview_minus_button_cart"
+        app:layout_constraintStart_toEndOf="@+id/imageview_minus_button_cart"
+        app:layout_constraintTop_toTopOf="@+id/imageview_minus_button" />
+
+    <ImageView
+        android:id="@+id/imageview_plus_button_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_count_cart"
+        app:layout_constraintStart_toEndOf="@+id/textView_count_cart"
+        app:layout_constraintTop_toTopOf="@+id/textView_count_cart"
+        app:srcCompat="@drawable/plus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
